@@ -17,6 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main { assets.srcDirs = ['src/main/assets', 'src/main/HinhAnh', 'src/main/assets/HinhAnh'] }
+    }
 }
 
 dependencies {
